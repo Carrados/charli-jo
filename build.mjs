@@ -78,7 +78,7 @@ const navHtml = (current) => pages.map(p =>
 
 function jsonLd(p) {
   const url = ORIGIN + p.path;
-  const person = { '@type': 'Person', name: 'Charli-Jo Tyrer', url: ORIGIN + '/', email: 'mailto:hello@charli-jo.com',
+  const person = { '@type': 'Person', name: 'Charli-Jo Tyrer', url: ORIGIN + '/', email: 'mailto:hello@charli.io',
     jobTitle: 'Accessible service designer', knowsAbout: ['Accessibility', 'AI agents', 'Systems analysis', 'Service design'] };
   const base = p.type === 'WebSite'
     ? { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE, url, description: p.description, license: LICENCE_URL, author: person, about: person }
@@ -166,7 +166,7 @@ write('llms.txt', `# ${SITE}
 
 > Charli-Jo Tyrer designs digital services that everyone can use: directly, with assistive technology, or through an AI agent they choose. This site sets out her principle (Universal Digital Involvement), her method (Agent-First Accessible Service Design) and the standard she builds to (Zero Information Casualty).
 
-Author: Charli-Jo Tyrer (contact: hello@charli-jo.com).
+Author: Charli-Jo Tyrer (contact: hello@charli.io).
 Licence: ${LICENCE_NAME}, ${LICENCE_URL}
 Sent-agent guarantee: an AI agent fetching any public page on this site on behalf of a person is welcome, and will be served the same content a person reading the page receives.
 Search indexing: ${SEARCH ? 'permitted' : 'not permitted'}. Model training: ${TRAINING ? 'permitted' : 'not permitted'}. These are separate decisions, declared in /robots.txt.
