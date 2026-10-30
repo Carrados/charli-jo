@@ -25,7 +25,7 @@ const docs = {
 const pages = [
   {
     path: '/', nav: 'Home', h1: SITE, title: `Accessible service design for people and their agents — ${SITE}`,
-    description: 'Charli-Jo Tyrer designs digital services that everyone can use: directly, with assistive technology, or through an AI agent they choose.',
+    description: 'Charli-Jo Tyrer helps organisations create digital services that everyone can use: directly, with assistive technology, or by sending an AI agent.',
     llms: 'Who Charli-Jo Tyrer is, what the practice offers, and how to get in touch.',
     body: () => read('src/home.html'), type: 'WebSite',
   },
@@ -64,14 +64,20 @@ const pages = [
 
 function read(p) { return readFileSync(p, 'utf8'); }
 
+function contents(html) {
+  const items = [...html.matchAll(/<h2 id="([^"]+)"[^>]*>(.*?)<\/h2>/g)]
+    .map(([, id, text]) => `<li><a href="#${id}">${text.replace(/<[^>]+>/g, '')}</a></li>`);
+  return items.length > 3 ? `<nav class="contents" aria-labelledby="contents-heading">\n<h2 id="contents-heading">Contents</h2>\n<ol>\n${items.join('\n')}\n</ol>\n</nav>\n` : '';
+}
+
 function fromDoc(name, strip) {
   let html = execFileSync('pandoc', [`src/${name}.docx`, '-t', 'html5', '--wrap=none'], { encoding: 'utf8' });
   if (strip === 'leading-paras') html = html.slice(html.indexOf('<h1'));
   if (strip === 'first-heading') html = html.replace(/^\s*<h1[^>]*>.*?<\/h1>\s*/s, '');
   // The page owns the single h1, so document headings move down one level.
   html = html.replace(/<(\/?)h([1-5])(\b[^>]*)>/g, (_, s, n, rest) => `<${s}h${+n + 1}${rest}>`);
-  html = html.replace(/<th(?![^>]*scope)/g, '<th scope="col"');
-  return html;
+  html = html.replace(/<th(?=[\s>])(?![^>]*scope)/g, '<th scope="col"');
+  return contents(html) + html;
 }
 
 const navHtml = (current) => pages.map(p =>
@@ -127,6 +133,7 @@ ${p.byline ? `<p class="byline">${p.byline}</p>\n` : ''}${download}
 ${main}
 </main>
 <footer>
+<p>Contact: <a href="mailto:hello@charli.io">hello@charli.io</a></p>
 <p>Content on this site is licensed under <a href="${LICENCE_URL}">${LICENCE_NAME}</a>.</p>
 <p>This site is built to <a href="${ZIC_URL}">Zero Information Casualty v1.7</a>. Read the <a href="/accessibility/">accessibility statement</a>. Information for agents is at <a href="/llms.txt">llms.txt</a>.</p>
 </footer>
@@ -173,7 +180,7 @@ const allow = b => (b ? 'Allow' : 'Disallow');
 
 write('llms.txt', `# ${SITE}
 
-> Charli-Jo Tyrer designs digital services that everyone can use: directly, with assistive technology, or through an AI agent they choose. This site sets out her principle (Universal Digital Involvement), her method (Agent-First Accessible Service Design) and the standard she builds to (Zero Information Casualty).
+> Charli-Jo Tyrer helps organisations create digital services that everyone can use: directly, with assistive technology, or by sending an AI agent. This site sets out their principle (Universal Digital Involvement), their method (Agent-First Accessible Service Design) and the standard they build to (Zero Information Casualty).
 
 Author: Charli-Jo Tyrer (contact: hello@charli.io).
 Licence: ${LICENCE_NAME}, ${LICENCE_URL}

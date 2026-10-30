@@ -4,6 +4,20 @@
 
 Canonical page: https://charli-jo.com/principle/
 
+## Contents
+
+1.  [The principle](#the-principle)
+2.  [Why “involvement”](#why-involvement)
+3.  [The problem with inclusion as we practise it](#the-problem-with-inclusion-as-we-practise-it)
+4.  [Where this comes from](#where-this-comes-from)
+5.  [What the principle means](#what-the-principle-means)
+6.  [A guard against “everyone”](#a-guard-against-everyone)
+7.  [Five commitments](#five-commitments)
+8.  [How it fits with method and standards](#how-it-fits-with-method-and-standards)
+9.  [For publishers and agent visibility](#for-publishers-and-agent-visibility)
+10. [What changes](#what-changes)
+11. [An invitation](#an-invitation)
+
 ## The principle
 
 > *A service built for universal digital involvement is designed from the outset to be open to all people, and to the agents they authorise to act on their behalf. People may use it directly, through assistive technology, or by delegating tasks to an agent. None of these forms of participation is treated as an exception requiring special accommodation.*
@@ -86,25 +100,12 @@ An organisation adopting Universal Digital Involvement commits to the following:
 
 A principle needs ways to be met. Universal Digital Involvement is the principle. Two pieces of my own work are ways of delivering it, a method and a standard, and others are welcome:
 
-**Layer**
-
-**What it does**
-
-Principle
-
-Universal Digital Involvement: services are open to all people and to the agents they authorise.
-
-Method
-
-Agent-First Accessible Service Design: analyses an organisation from outside, models its services around human intentions, and builds and tests them so that people can complete tasks directly or through agents, with evidence and control.
-
-Information standard
-
-ZIC (Zero Information Casualties): a specification that checks whatever a service publishes reaches every reader, human, assistive technology or agent, without loss on the way. It also distinguishes the purposes for which machines arrive, such as search, agents acting for people and model training, so an organisation can decline some purposes without turning away the people its services exist for.
-
-Interfaces
-
-WCAG and equivalent standards: the established baseline for accessible human interaction.
+| **Layer**            | **What it does**                                                                                                                                                                                                                                                                                                                                                                                               |
+|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Principle            | Universal Digital Involvement: services are open to all people and to the agents they authorise.                                                                                                                                                                                                                                                                                                               |
+| Method               | Agent-First Accessible Service Design: analyses an organisation from outside, models its services around human intentions, and builds and tests them so that people can complete tasks directly or through agents, with evidence and control.                                                                                                                                                                  |
+| Information standard | ZIC (Zero Information Casualty): a specification that checks whatever a service publishes reaches every reader, human, assistive technology or agent, without loss on the way. It also distinguishes the purposes for which machines arrive, such as search, agents acting for people and model training, so an organisation can decline some purposes without turning away the people its services exist for. |
+| Interfaces           | WCAG and equivalent standards: the established baseline for accessible human interaction.                                                                                                                                                                                                                                                                                                                      |
 
 Each layer can be adopted on its own. A charity can commit to the principle without adopting any particular method or standard.
 

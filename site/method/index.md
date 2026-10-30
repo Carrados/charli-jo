@@ -4,6 +4,22 @@
 
 Canonical page: https://charli-jo.com/method/
 
+## Contents
+
+1.  [What is Agent-First Accessible Service Design?](#what-is-agent-first-accessible-service-design)
+2.  [Why a new approach is needed](#why-a-new-approach-is-needed)
+3.  [Returning to systems analysis](#returning-to-systems-analysis)
+4.  [The intention and the outcome](#the-intention-and-the-outcome)
+5.  [The Completion Chain](#the-completion-chain)
+6.  [Agents on both sides of the service](#agents-on-both-sides-of-the-service)
+7.  [Authority, evidence and trust](#authority-evidence-and-trust)
+8.  [How the method works](#how-the-method-works)
+9.  [From prototype to working service](#from-prototype-to-working-service)
+10. [Migration without reproducing the old system](#migration-without-reproducing-the-old-system)
+11. [What makes the method different?](#what-makes-the-method-different)
+12. [Questions for further work](#questions-for-further-work)
+13. [The underlying principle](#the-underlying-principle)
+
 ## What is Agent-First Accessible Service Design?
 
 Agent-First Accessible Service Design is a method for understanding, designing and building services that people can use independently, either directly or through AI agents they choose to authorise. It combines established systems analysis with accessibility practice, AI-assisted development and the emerging possibilities of agent-mediated services.
@@ -30,25 +46,12 @@ The method deliberately revives disciplines I practised as a systems analyst, be
 
 The Structured Systems Analysis and Design Method (SSADM) drew a central distinction between the physical system, meaning how something is currently implemented, and the logical system, meaning what it does independently of that implementation. It moved through four views:
 
-**View**
-
-**Question**
-
-Current physical
-
-What exists now?
-
-Current logical
-
-What does the existing system actually do?
-
-Required logical
-
-What should the system do?
-
-Required physical
-
-How should the new system be implemented?
+| **View**          | **Question**                               |
+|-------------------|--------------------------------------------|
+| Current physical  | What exists now?                           |
+| Current logical   | What does the existing system actually do? |
+| Required logical  | What should the system do?                 |
+| Required physical | How should the new system be implemented?  |
 
 These distinctions matter even more in the age of AI coding agents. A website’s navigation menu tells us how somebody once decided to organise information. It doesn’t necessarily describe the organisation, its services or the intentions of the people who use them. Rebuilding the existing pages with newer technology can simply reproduce the same conceptual limitations, only faster. Instead, the method reconstructs the organisation’s logical services from the evidence available, then designs a required logical system around human intentions and outcomes. Existing technology informs the investigation and constrains implementation where necessary, but it does not dictate the service model.
 
@@ -74,33 +77,14 @@ At the centre of the method is a six-part model of accessible service completion
 
 Every link is an accessibility requirement.
 
-**Link**
-
-**The question to test**
-
-Intention
-
-Can the person express what they want to achieve, including uncertainty or ambiguity?
-
-Understanding
-
-Can they discover and understand the available options, requirements and consequences?
-
-Authorisation
-
-Can they decide what should happen and, where appropriate, give an agent permission to act within clear limits?
-
-Action
-
-Can the task actually be completed, either directly or through authorised delegation?
-
-Evidence
-
-Can the person establish what happened, rather than relying on an unsupported assertion of success?
-
-Correction
-
-Can they change their mind, correct an error, withdraw permission, reverse an action where possible or find an appropriate remedy?
+| **Link**      | **The question to test**                                                                                                           |
+|---------------|------------------------------------------------------------------------------------------------------------------------------------|
+| Intention     | Can the person express what they want to achieve, including uncertainty or ambiguity?                                              |
+| Understanding | Can they discover and understand the available options, requirements and consequences?                                             |
+| Authorisation | Can they decide what should happen and, where appropriate, give an agent permission to act within clear limits?                    |
+| Action        | Can the task actually be completed, either directly or through authorised delegation?                                              |
+| Evidence      | Can the person establish what happened, rather than relying on an unsupported assertion of success?                                |
+| Correction    | Can they change their mind, correct an error, withdraw permission, reverse an action where possible or find an appropriate remedy? |
 
 An individual page might satisfy WCAG while the wider service fails at one or more of these links. The Completion Chain therefore complements conventional accessibility testing rather than replacing it. It tests whether a service is accessible from the expression of an intention through to a demonstrable result.
 
@@ -160,21 +144,11 @@ A working prototype may expose an incorrect assumption about a service, and test
 
 AI agents make it possible to move from a logical model to a working prototype very quickly. That speed is valuable, but a convincing prototype is not a dependable service. The method distinguishes three levels of achievement:
 
-**Level**
-
-**What it means**
-
-Model demonstrated
-
-A working prototype shows how the proposed service could operate.
-
-Service validated
-
-Representative users have completed defined tasks, including direct assistive technology and agent-mediated journeys.
-
-Production ready
-
-Accessibility, security, privacy, governance, operations, maintenance and service continuity requirements have been addressed.
+| **Level**          | **What it means**                                                                                                              |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Model demonstrated | A working prototype shows how the proposed service could operate.                                                              |
+| Service validated  | Representative users have completed defined tasks, including direct assistive technology and agent-mediated journeys.          |
+| Production ready   | Accessibility, security, privacy, governance, operations, maintenance and service continuity requirements have been addressed. |
 
 These levels stop the speed of AI-generated implementation from being mistaken for evidence of readiness. The ambition is to build quickly enough that ideas are tested against working systems, while keeping the discipline needed to deploy them responsibly.
 
@@ -183,12 +157,6 @@ These levels stop the speed of AI-generated implementation from being mistaken f
 Reconstructing the existing website also produces a content inventory, a URL map and a record of uncertainties that need organisational confirmation. These support a separate migration process, much as SSADM treated data conversion as its own piece of work. Existing content must be accounted for, published links and bookmarks should keep working through redirects, and member information, live transactions, legal obligations and operational dependencies need careful treatment.
 
 Migration constraints should be understood early, but they must not turn the new logical design into a reproduction of the existing website. The objective is continuity of service without continuity of unnecessary limitations.
-
-## A practical first case: TAVIP
-
-The Technology Association of Visually Impaired People (TAVIP) offers a suitable first opportunity to explore the method. The proposed starting point is an outside-in examination of TAVIP’s publicly available website and services. The aim is not merely to find accessibility defects or replace one set of pages with another. It is to reconstruct the underlying service model, identify what members and prospective members want to achieve, and demonstrate how those services could work through accessible direct interaction and authorised agents.
-
-A small pilot covering one complete service journey could establish whether the approach delivers practical value. The wider questions of delegated authority and agent-mediated member services could also give useful material to an organisational AI working group. The project is currently a proposal rather than an agreed collaboration. Any implementation, use of organisational information or publication of a joint case study would require TAVIP’s agreement.
 
 ## What makes the method different?
 
