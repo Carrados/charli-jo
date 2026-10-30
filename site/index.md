@@ -2,11 +2,11 @@
 
 Canonical page: https://charli-jo.com/
 
-I design digital services that everyone can use: directly, with assistive technology, or through an AI agent they choose.
+I design digital services that everyone can use: directly, with assistive technology, or through an agent they choose.
 
 ## What I do
 
-Most accessibility work starts with a finished website and looks for faults. I start earlier, with what people come to an organisation to achieve and what it can actually do for them. From there I model the service, build it with AI coding agents, and test whole journeys with screen readers and with agents, until people can complete them and can prove that they did.
+Most accessibility work starts with a finished website and looks for faults. I start earlier, with what people come to an organisation to achieve and what it can actually do for them. From there I model the service, build it with coding agents, and test whole journeys with screen readers and with agents, until people can complete them and can prove that they did.
 
 I have worked in computing and assistive technology for about forty years. I trained as a systems analyst in SSADM and Jackson Structured Programming, spent around thirty years in the charity sector, including at RNIB, and ran my own business training blind people to use technology. I am blind, and I test with a screen reader because that is how I use the web.
 
@@ -42,7 +42,7 @@ Start with one journey. I look at your public website and services from the outs
 - A working prototype of one service journey
 - Agent-first rebuilds of websites and services
 - Zero Information Casualty audits
-- Talks and training on AI agents and accessibility
+- Talks and training on agents and accessibility
 
 ## Get in touch
 

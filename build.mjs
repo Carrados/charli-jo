@@ -127,7 +127,7 @@ ${main}
 </main>
 <footer>
 <p>Content on this site is licensed under <a href="${LICENCE_URL}">${LICENCE_NAME}</a>.</p>
-<p>This site is built to <a href="/standard/">Zero Information Casualty v1.7</a>. Read the <a href="/accessibility/">accessibility statement</a>. Information for AI agents is at <a href="/llms.txt">llms.txt</a>.</p>
+<p>This site is built to <a href="/standard/">Zero Information Casualty v1.7</a>. Read the <a href="/accessibility/">accessibility statement</a>. Information for agents is at <a href="/llms.txt">llms.txt</a>.</p>
 </footer>
 </body>
 </html>
