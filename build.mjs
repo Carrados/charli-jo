@@ -15,10 +15,11 @@ const LICENCE_NAME = 'Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)
 const SEARCH = true;
 const TRAINING = true;
 
+const ZIC_URL = 'https://zeroinformationcasualty.org/';
+
 const docs = {
   principle: 'Universal-Digital-Involvement-v1.1',
   method: 'Agent-First-Accessible-Service-Design-v1.0',
-  standard: 'Zero-Information-Casualty-v1.7',
 };
 
 const pages = [
@@ -46,11 +47,11 @@ const pages = [
   },
   {
     path: '/standard/', nav: 'Standard', h1: 'Zero Information Casualty',
-    title: `Zero Information Casualty v1.7 — ${SITE}`,
-    description: 'Zero Information Casualty v1.7: a web design specification so that no reader, human, assistive technology or sent agent, loses public meaning.',
-    llms: 'The full ZIC v1.7 specification: philosophy, design decisions, technical requirements, validation and conformance.',
-    byline: 'A web design specification by C J Tyrer and Claude (Anthropic). Version 1.7, September 2026. Licensed CC BY-SA 4.0.',
-    body: () => fromDoc(docs.standard, 'first-heading'), download: docs.standard, type: 'WebPage',
+    title: `Zero Information Casualty \u2014 ${SITE}`,
+    description: 'Zero Information Casualty: the web design standard Charli-Jo Tyrer builds and audits to, summarised, with a link to the full v1.7 specification.',
+    llms: `A summary of the ZIC standard and how it fits the practice. The full, canonical v1.7 specification is at ${ZIC_URL}`,
+    byline: 'A summary. The full specification is published at zeroinformationcasualty.org.',
+    body: () => read('src/standard.html'), type: 'WebPage',
   },
   {
     path: '/accessibility/', nav: 'Accessibility', h1: 'Accessibility statement',
@@ -127,7 +128,7 @@ ${main}
 </main>
 <footer>
 <p>Content on this site is licensed under <a href="${LICENCE_URL}">${LICENCE_NAME}</a>.</p>
-<p>This site is built to <a href="/standard/">Zero Information Casualty v1.7</a>. Read the <a href="/accessibility/">accessibility statement</a>. Information for agents is at <a href="/llms.txt">llms.txt</a>.</p>
+<p>This site is built to <a href="${ZIC_URL}">Zero Information Casualty v1.7</a>. Read the <a href="/accessibility/">accessibility statement</a>. Information for agents is at <a href="/llms.txt">llms.txt</a>.</p>
 </footer>
 </body>
 </html>
@@ -186,6 +187,7 @@ ${pages.map(p => `- [${p.h1}](${ORIGIN}${p.path}): ${p.llms} Markdown: ${ORIGIN}
 
 ## Optional
 
+- [Zero Information Casualty v1.7](${ZIC_URL}): the full, canonical specification this site is built to.
 - [Full text of the site](${ORIGIN}/llms-full.txt): every page in one Markdown file.
 `);
 

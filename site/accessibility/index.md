@@ -2,7 +2,7 @@
 
 Canonical page: https://charli-jo.com/accessibility/
 
-This site is built to conform to [Zero Information Casualty version 1.7](/standard/). The aim is that nobody, whether reading directly, using assistive technology, or sending an agent, loses access to anything published here.
+This site is built to conform to [Zero Information Casualty version 1.7](https://zeroinformationcasualty.org/). The aim is that nobody, whether reading directly, using assistive technology, or sending an agent, loses access to anything published here.
 
 ## How it is built
 

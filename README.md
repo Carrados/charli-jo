@@ -17,7 +17,8 @@ The finished site is written to `site/`.
 ## Where things live
 
 - `src/home.html` and `src/accessibility.html`: the home page and accessibility statement, written by hand.
-- `src/*.docx`: the three source documents. The Principle, Method and Standard pages are generated from these, so to update a page, replace its Word document and rebuild.
+- `src/*.docx`: the Principle and Method source documents. Those pages are generated from them, so to update a page, replace its Word document and rebuild.
+- `src/standard.html`: a short summary of ZIC. The full specification lives at https://zeroinformationcasualty.org/ and is not copied here.
 - `src/styles.css`: the one stylesheet.
 - `build.mjs`: the build, including robots.txt, sitemap.xml and the agent surface. The search and training declarations are the `SEARCH` and `TRAINING` settings near the top.
 - `wrangler.jsonc`: Cloudflare Workers deployment. Cloudflare serves the `site/` folder as it is in the repo, so run the build and commit `site/` before pushing.

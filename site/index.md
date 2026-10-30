@@ -32,7 +32,7 @@ Intention, Understanding, Authorisation, Action, Evidence, Correction
 
 Zero Information Casualty (ZIC) is a web design specification. It makes sure that whatever a site publishes reaches every reader, whether a person, assistive technology or an agent a person sent, without meaning being lost on the way. It asks four questions: can they read it, is the person's reader allowed in, did it actually arrive, and did it survive being read?
 
-[Read the Zero Information Casualty specification](/standard/)
+[Read about the Zero Information Casualty standard](/standard/)
 
 ## How we could work together
 

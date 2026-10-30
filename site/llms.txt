@@ -13,9 +13,10 @@ This file, /llms-full.txt and the Markdown mirrors are generated from the site's
 - [Charli-Jo Tyrer](https://charli-jo.com/): Who Charli-Jo Tyrer is, what the practice offers, and how to get in touch. Markdown: https://charli-jo.com/index.md
 - [Universal Digital Involvement](https://charli-jo.com/principle/): The principle: services open to all people and their authorised agents, with five commitments for organisations. Markdown: https://charli-jo.com/principle/index.md
 - [Agent-First Accessible Service Design](https://charli-jo.com/method/): The method: outside-in systems analysis, the Completion Chain, six activities, and building with agents. Markdown: https://charli-jo.com/method/index.md
-- [Zero Information Casualty](https://charli-jo.com/standard/): The full ZIC v1.7 specification: philosophy, design decisions, technical requirements, validation and conformance. Markdown: https://charli-jo.com/standard/index.md
+- [Zero Information Casualty](https://charli-jo.com/standard/): A summary of the ZIC standard and how it fits the practice. The full, canonical v1.7 specification is at https://zeroinformationcasualty.org/ Markdown: https://charli-jo.com/standard/index.md
 - [Accessibility statement](https://charli-jo.com/accessibility/): How this site meets ZIC v1.7, its agent surface, and how to report a barrier. Markdown: https://charli-jo.com/accessibility/index.md
 
 ## Optional
 
+- [Zero Information Casualty v1.7](https://zeroinformationcasualty.org/): the full, canonical specification this site is built to.
 - [Full text of the site](https://charli-jo.com/llms-full.txt): every page in one Markdown file.
