@@ -32,4 +32,4 @@ This site does not currently publish articles or posts in a series, so it has no
 
 ## If something does not work
 
-Please tell me at <hello@charli.io>. I test this site with screen readers and with agents, but I would rather hear about a barrier than assume there is none.
+Please tell me at <hello@charli-jo.com>. I test this site with screen readers and with agents, but I would rather hear about a barrier than assume there is none.

@@ -2,7 +2,7 @@
 
 > Charli-Jo Tyrer helps organisations create digital services that everyone can use: directly, with assistive technology, or by sending an AI agent. This site sets out their principle (Universal Digital Involvement), their method (Agent-First Accessible Service Design) and the standard they build to (Zero Information Casualty).
 
-Author: Charli-Jo Tyrer (contact: hello@charli.io).
+Author: Charli-Jo Tyrer (contact: hello@charli-jo.com).
 Licence: Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0), https://creativecommons.org/licenses/by-sa/4.0/
 Sent-agent guarantee: an AI agent fetching any public page on this site on behalf of a person is welcome, and will be served the same content a person reading the page receives.
 Search indexing: permitted. Model training: permitted. These are separate decisions, declared in /robots.txt.

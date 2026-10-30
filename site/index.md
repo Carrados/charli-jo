@@ -51,4 +51,4 @@ Start with one journey. I look at your public website and services from the outs
 
 ## Get in touch
 
-Email me at <hello@charli.io>.
+Email me at <hello@charli-jo.com>.

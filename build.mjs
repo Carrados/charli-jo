@@ -93,7 +93,7 @@ const navHtml = (current) => pages.map(p =>
 
 function jsonLd(p) {
   const url = ORIGIN + p.path;
-  const person = { '@type': 'Person', name: 'Charli-Jo Tyrer', url: ORIGIN + '/', email: 'mailto:hello@charli.io',
+  const person = { '@type': 'Person', name: 'Charli-Jo Tyrer', url: ORIGIN + '/', email: 'mailto:hello@charli-jo.com',
     jobTitle: 'Accessible service designer', knowsAbout: ['Accessibility', 'AI agents', 'Systems analysis', 'Service design'] };
   const base = p.type === 'WebSite'
     ? { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE, url, description: p.description, license: LICENCE_URL, author: person, about: person }
@@ -146,7 +146,7 @@ ${p.byline ? `<p class="byline">${p.byline}</p>\n` : ''}${download}
 ${main}
 </main>
 <footer>
-<p>Contact: <a href="mailto:hello@charli.io">hello@charli.io</a></p>
+<p>Contact: <a href="mailto:hello@charli-jo.com">hello@charli-jo.com</a></p>
 <p>Content on this site is licensed under <a href="${LICENCE_URL}">${LICENCE_NAME}</a>.</p>
 <p>This site is built to <a href="${ZIC_URL}">Zero Information Casualty v1.7</a>. Read the <a href="/accessibility/">accessibility statement</a>. Information for agents is at <a href="/llms.txt">llms.txt</a>.</p>
 </footer>
@@ -196,7 +196,7 @@ write('llms.txt', `# ${SITE}
 
 > Charli-Jo Tyrer helps organisations create digital services that everyone can use: directly, with assistive technology, or by sending an AI agent. This site sets out their principle (Universal Digital Involvement), their method (Agent-First Accessible Service Design) and the standard they build to (Zero Information Casualty).
 
-Author: Charli-Jo Tyrer (contact: hello@charli.io).
+Author: Charli-Jo Tyrer (contact: hello@charli-jo.com).
 Licence: ${LICENCE_NAME}, ${LICENCE_URL}
 Sent-agent guarantee: an AI agent fetching any public page on this site on behalf of a person is welcome, and will be served the same content a person reading the page receives.
 Search indexing: ${SEARCH ? 'permitted' : 'not permitted'}. Model training: ${TRAINING ? 'permitted' : 'not permitted'}. These are separate decisions, declared in /robots.txt.
