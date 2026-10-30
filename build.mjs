@@ -114,7 +114,7 @@ ${jsonLd(p)}
 <body>
 <a class="skip" href="#main">Skip to main content</a>
 <header>
-<p class="site-name"><a href="/">${SITE}</a></p>
+<p class="site-name">${SITE}</p>
 <nav aria-label="Main">
 <ul>
 ${navHtml(p.path)}
