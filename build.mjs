@@ -81,7 +81,8 @@ function fromDoc(name, strip) {
 }
 
 const navHtml = (current) => pages.map(p =>
-  `<li><a href="${p.path}"${p.path === current ? ' aria-current="page"' : ''}>${p.nav}</a></li>`).join('\n');
+  `<li><a href="${p.path}"${p.path === current ? ' aria-current="page"' : ''}>${p.nav}</a></li>`).join('\n')
+  + '\n<li><a href="/#contact">Contact</a></li>';
 
 function jsonLd(p) {
   const url = ORIGIN + p.path;
