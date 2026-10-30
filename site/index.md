@@ -2,11 +2,11 @@
 
 Canonical page: https://charli-jo.com/
 
-I design digital services that everyone can use: directly, with assistive technology, or through an agent they choose.
+I help organisations create digital services that everyone can use: directly, with assistive technology, or by sending an agent.
 
 ## What I do
 
-Most accessibility work starts with a finished website and looks for faults. I start earlier, with what people come to an organisation to achieve and what it can actually do for them. From there I model the service, build it with coding agents, and test whole journeys with screen readers and with agents, until people can complete them and can prove that they did.
+Most accessibility work starts with a finished website and looks for faults. I start earlier, with what people come to an organisation to achieve and what it can actually do for them. From there I model the service, build it with coding agents, and test each journey from start to finish, with screen readers and with agents, until people can complete it and can prove that they did.
 
 I have worked in computing and assistive technology for about forty years. I trained as a systems analyst in SSADM and Jackson Structured Programming, spent around thirty years in the charity sector, including at RNIB, and ran my own business training blind people to use technology. I am blind, and I test with a screen reader because that is how I use the web.
 
@@ -22,7 +22,7 @@ A service should be designed from the outset to be open to all people, and to th
 
 ### The method: Agent-First Accessible Service Design
 
-The method revives systems analysis for the age of agents. It looks at an organisation from the outside, separates what a service does from how it happens to be built, models it around human intentions, and then builds and tests it. At its centre is the Completion Chain, six links that every journey must hold:
+The method revives systems analysis for the age of agents. It looks at an organisation from the outside, separates what a service does from how it was built, models it around human intentions, and then builds and tests it. At its centre is the Completion Chain, six links that every journey must hold:
 
 Intention, Understanding, Authorisation, Action, Evidence, Correction
 
@@ -36,7 +36,7 @@ Zero Information Casualty (ZIC) is a web design specification. It makes sure tha
 
 ## How we could work together
 
-Start with one journey. I look at your public website and services from the outside, with no logins, source code or hosting details needed, and reconstruct what your service actually does. Then I propose how one important journey could work for everyone, build a working prototype with agents, and test it. If it is useful, we go further. If it is not, you have lost very little.
+Start with one journey. I look at your public website and services from the outside, with no logins, source code or hosting details needed, and reconstruct what your service actually does. Then I propose how one important journey could work for everyone, build a working prototype, and test it. If it is useful, we go further. If it is not, you have lost very little.
 
 - Outside-in service review
 - A working prototype of one service journey
