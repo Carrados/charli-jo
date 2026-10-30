@@ -1,0 +1,21 @@
+# Charli-Jo Tyrer
+
+> Charli-Jo Tyrer designs digital services that everyone can use: directly, with assistive technology, or through an AI agent they choose. This site sets out her principle (Universal Digital Involvement), her method (Agent-First Accessible Service Design) and the standard she builds to (Zero Information Casualty).
+
+Author: Charli-Jo Tyrer (contact: hello@charli-jo.com).
+Licence: Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0), https://creativecommons.org/licenses/by-sa/4.0/
+Sent-agent guarantee: an AI agent fetching any public page on this site on behalf of a person is welcome, and will be served the same content a person reading the page receives.
+Search indexing: permitted. Model training: permitted. These are separate decisions, declared in /robots.txt.
+This file, /llms-full.txt and the Markdown mirrors are generated from the site's pages at build time.
+
+## Pages
+
+- [Charli-Jo Tyrer](https://charli-jo.com/): Who Charli-Jo Tyrer is, what the practice offers, and how to get in touch. Markdown: https://charli-jo.com/index.md
+- [Universal Digital Involvement](https://charli-jo.com/principle/): The principle: services open to all people and their authorised agents, with five commitments for organisations. Markdown: https://charli-jo.com/principle/index.md
+- [Agent-First Accessible Service Design](https://charli-jo.com/method/): The method: outside-in systems analysis, the Completion Chain, six activities, and building with agents. Markdown: https://charli-jo.com/method/index.md
+- [Zero Information Casualty](https://charli-jo.com/standard/): The full ZIC v1.7 specification: philosophy, design decisions, technical requirements, validation and conformance. Markdown: https://charli-jo.com/standard/index.md
+- [Accessibility statement](https://charli-jo.com/accessibility/): How this site meets ZIC v1.7, its agent surface, and how to report a barrier. Markdown: https://charli-jo.com/accessibility/index.md
+
+## Optional
+
+- [Full text of the site](https://charli-jo.com/llms-full.txt): every page in one Markdown file.

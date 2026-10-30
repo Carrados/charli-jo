@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent-First Accessible Service Design — Charli-Jo Tyrer</title>
+<meta name="description" content="Agent-First Accessible Service Design: a method that revives systems analysis to build services people can use directly or through AI agents.">
+<link rel="canonical" href="https://charli-jo.com/method/">
+<meta property="og:title" content="Agent-First Accessible Service Design — Charli-Jo Tyrer">
+<meta property="og:description" content="Agent-First Accessible Service Design: a method that revives systems analysis to build services people can use directly or through AI agents.">
+<meta property="og:url" content="https://charli-jo.com/method/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Charli-Jo Tyrer">
+<link rel="stylesheet" href="/styles.css">
+<link rel="alternate" type="text/markdown" href="/method/index.md" title="Markdown version of this page">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Agent-First Accessible Service Design",
+  "url": "https://charli-jo.com/method/",
+  "description": "Agent-First Accessible Service Design: a method that revives systems analysis to build services people can use directly or through AI agents.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Charli-Jo Tyrer",
+    "url": "https://charli-jo.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Charli-Jo Tyrer",
+    "url": "https://charli-jo.com/",
+    "email": "mailto:hello@charli-jo.com",
+    "jobTitle": "Accessible service designer",
+    "knowsAbout": [
+      "Accessibility",
+      "AI agents",
+      "Systems analysis",
+      "Service design"
+    ]
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header>
+<p class="site-name"><a href="/">Charli-Jo Tyrer</a></p>
+<nav aria-label="Main">
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/principle/">Principle</a></li>
+<li><a href="/method/" aria-current="page">Method</a></li>
+<li><a href="/standard/">Standard</a></li>
+<li><a href="/accessibility/">Accessibility</a></li>
+</ul>
+</nav>
+</header>
+<main id="main" tabindex="-1">
+<h1>Agent-First Accessible Service Design</h1>
+<p class="byline">An introduction to the method by Charli-Jo Tyrer. Version 1.0, October 2026.</p>
+<p class="download"><a href="/files/Agent-First-Accessible-Service-Design-v1.0.docx">Download Agent-First Accessible Service Design as a Word document</a></p>
+<h2 id="what-is-agent-first-accessible-service-design">What is Agent-First Accessible Service Design?</h2>
+<p>Agent-First Accessible Service Design is a method for understanding, designing and building services that people can use independently, either directly or through AI agents they choose to authorise. It combines established systems analysis with accessibility practice, AI-assisted development and the emerging possibilities of agent-mediated services.</p>
+<p>The starting point is not a website, an application or a technology platform. It is the relationship between what people want to achieve and what an organisation is capable of doing for them. The method examines an organisation from the outside, reconstructs the services, information, processes and rules behind its existing interfaces, and develops a model of what those services should do. We then turn that model into a working implementation, which is tested against real human intentions and outcomes.</p>
+<blockquote>
+<p><em>Understand the service before building the system.</em></p>
+</blockquote>
+<h2 id="why-a-new-approach-is-needed">Why a new approach is needed</h2>
+<p>For most of the web’s history, the page has been the organising unit of digital service design. Organisations arrange information into pages, build navigation menus around them and provide forms through which people request services or complete transactions. Accessibility work has largely followed the same structure, examining pages, controls and interactions to establish whether disabled people can perceive, understand and operate them.</p>
+<p>That work remains essential, and WCAG provides a necessary baseline for accessible interfaces. But an accessible collection of pages is not necessarily an accessible service. Someone can navigate every page of a website with a screen reader and still be unable to work out which service meets their needs, how to apply, whether an application has succeeded or what to do when something goes wrong.</p>
+<p>AI agents make this distinction pressing. Instead of navigating a website themselves, a person might simply say to an agent, “Help me find the technology training I need to get back into work.” The agent must then understand the intention, discover relevant services, establish eligibility, explain the options and perhaps help complete an application. The organisation’s services therefore have to be understandable beyond the particular pages, menus and forms through which they happen to be presented.</p>
+<p>This does not make human interfaces redundant. It means the underlying service must be designed independently of them. Agent-first does not mean agent-only. It means designing a service whose meaning, capabilities, rules and evidence are available to people directly and, where they choose, to the agents acting on their behalf.</p>
+<h2 id="returning-to-systems-analysis">Returning to systems analysis</h2>
+<p>The method deliberately revives disciplines I practised as a systems analyst, before the modern web and contemporary AI existed. Three ideas from that tradition do most of the work.</p>
+<h3 id="ssadm-the-logical-and-the-physical">SSADM: the logical and the physical</h3>
+<p>The Structured Systems Analysis and Design Method (SSADM) drew a central distinction between the physical system, meaning how something is currently implemented, and the logical system, meaning what it does independently of that implementation. It moved through four views:</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<th scope="col"ead>
+<tr class="header">
+<th scope="col"><strong>View</strong></th>
+<th scope="col"><strong>Question</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Current physical</td>
+<td>What exists now?</td>
+</tr>
+<tr class="even">
+<td>Current logical</td>
+<td>What does the existing system actually do?</td>
+</tr>
+<tr class="odd">
+<td>Required logical</td>
+<td>What should the system do?</td>
+</tr>
+<tr class="even">
+<td>Required physical</td>
+<td>How should the new system be implemented?</td>
+</tr>
+</tbody>
+</table>
+<p>These distinctions matter even more in the age of AI coding agents. A website’s navigation menu tells us how somebody once decided to organise information. It doesn’t necessarily describe the organisation, its services or the intentions of the people who use them. Rebuilding the existing pages with newer technology can simply reproduce the same conceptual limitations, only faster. Instead, the method reconstructs the organisation’s logical services from the evidence available, then designs a required logical system around human intentions and outcomes. Existing technology informs the investigation and constrains implementation where necessary, but it does not dictate the service model.</p>
+<h3 id="jackson-structured-programming-structure-follows-structure">Jackson Structured Programming: structure follows structure</h3>
+<p>Michael Jackson’s principle was that a program’s structure should mirror the structure of the data it processes. This method applies the same principle one level up: a service’s structure should mirror the structure of the intentions it serves. If people come with five distinct purposes, the service should be shaped around five purposes, not around whatever pages an organisation happened to publish.</p>
+<h3 id="entity-life-histories-knowing-where-things-stand">Entity life histories: knowing where things stand</h3>
+<p>SSADM modelled how each significant thing in a system changes over time. An application, a booking or an enquiry moves through states such as received, under review, needing more information, accepted or closed. Many failures in agent-mediated services are really missing life histories. Nothing tells the person or their agent what state something is in, so the agent reports success it cannot evidence. Making those states explicit and visible is the origin of the Evidence link in the Completion Chain.</p>
+<h2 id="the-intention-and-the-outcome">The intention and the outcome</h2>
+<p>The method distinguishes between what someone wants and what the service can demonstrably help them achieve. An intention might be: “I want to become more confident using technology.” That may need clarification. Does the person want to use a smartphone, learn workplace software, improve their accessibility skills or become more independent? The service should help them explore those possibilities without silently deciding what they ought to want.</p>
+<p>An outcome might be: “The person has identified a suitable training course, understood its requirements and successfully enrolled.” An agent can complete a series of actions without fulfilling the original intention, and an organisation can deliver a service correctly without achieving everything the person hoped for. Designing around intentions and verifiable outcomes makes these gaps explicit. It also requires the service to describe its boundaries: what the organisation can provide, what lies outside its responsibilities, and when a person needs another source of help.</p>
+<h2 id="the-completion-chain">The Completion Chain</h2>
+<p>At the centre of the method is a six-part model of accessible service completion:</p>
+<p><strong>Intention → Understanding → Authorisation → Action → Evidence → Correction</strong></p>
+<p>Every link is an accessibility requirement.</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<th scope="col"ead>
+<tr class="header">
+<th scope="col"><strong>Link</strong></th>
+<th scope="col"><strong>The question to test</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intention</td>
+<td>Can the person express what they want to achieve, including uncertainty or ambiguity?</td>
+</tr>
+<tr class="even">
+<td>Understanding</td>
+<td>Can they discover and understand the available options, requirements and consequences?</td>
+</tr>
+<tr class="odd">
+<td>Authorisation</td>
+<td>Can they decide what should happen and, where appropriate, give an agent permission to act within clear limits?</td>
+</tr>
+<tr class="even">
+<td>Action</td>
+<td>Can the task actually be completed, either directly or through authorised delegation?</td>
+</tr>
+<tr class="odd">
+<td>Evidence</td>
+<td>Can the person establish what happened, rather than relying on an unsupported assertion of success?</td>
+</tr>
+<tr class="even">
+<td>Correction</td>
+<td>Can they change their mind, correct an error, withdraw permission, reverse an action where possible or find an appropriate remedy?</td>
+</tr>
+</tbody>
+</table>
+<p>An individual page might satisfy WCAG while the wider service fails at one or more of these links. The Completion Chain therefore complements conventional accessibility testing rather than replacing it. It tests whether a service is accessible from the expression of an intention through to a demonstrable result.</p>
+<h2 id="agents-on-both-sides-of-the-service">Agents on both sides of the service</h2>
+<p>The method considers two distinct uses of AI agents. The first is agent-assisted service construction, in which coding and analysis agents help investigate existing systems, reconstruct service models, build implementations, find accessibility barriers and make corrections. The second is agent-mediated service use, in which a person’s authorised agent helps them discover, understand and interact with services.</p>
+<p>These are separate capabilities and must be evaluated separately. An agent’s ability to build an accessible website does not prove that another agent can use the resulting service effectively. Nor does successful agent-mediated interaction prove that the service works for a person using a screen reader without an agent. The method therefore requires three complementary forms of accessibility:</p>
+<ul>
+<li><p><strong>Direct human accessibility:</strong> people can use the service independently, including with assistive technologies, with WCAG conformance as the baseline.</p></li>
+<li><p><strong>Agent-mediated accessibility:</strong> authorised agents can discover relevant information, understand permitted actions and interact with the service reliably.</p></li>
+<li><p><strong>Human control:</strong> people remain able to understand, direct, verify and correct what happens on their behalf.</p></li>
+</ul>
+<p>None is a substitute for the others.</p>
+<h2 id="authority-evidence-and-trust">Authority, evidence and trust</h2>
+<p>An agent-first service must distinguish between what an agent can technically do and what it is authorised to do. A person might authorise an agent to search for training opportunities, but not to disclose personal information or submit an application without confirmation. Permissions must be limited, understandable and withdrawable.</p>
+<p>Services must also provide reliable evidence of actions and outcomes. An agent saying “Your application has been submitted” is not evidence that the receiving organisation has accepted it. The service needs to expose meaningful states, confirmations and, where appropriate, references that establish what has happened. Actions should also be classified by whether they can be cancelled, reversed, corrected or only remedied after the event.</p>
+<p>Privacy and data minimisation are built into the logical design. An agent should not need to disclose someone’s disability, personal circumstances or membership details merely to discover what services are available. None of this can be left entirely to coding agents. It requires organisational decisions, human judgement and appropriate governance.</p>
+<h2 id="how-the-method-works">How the method works</h2>
+<p>The method has six activities. They draw on the four SSADM views but allow continuous revision rather than a rigid sequence of approvals.</p>
+<h3 id="observe-the-current-physical-system">1. Observe the current physical system</h3>
+<p>Examine the publicly available service from the outside: its information, navigation, forms, transactions, contact routes, terminology and apparent organisational responsibilities. Access to administrative systems or source code is not needed at this stage.</p>
+<h3 id="reconstruct-the-current-logical-system">2. Reconstruct the current logical system</h3>
+<p>Determine what the organisation actually offers, which processes exist, what information moves between them and which rules govern them. Record each finding as an established fact, a reasonable inference or a question only the organisation can answer.</p>
+<h3 id="model-intentions-and-outcomes">3. Model intentions and outcomes</h3>
+<p>Identify what people come to the organisation to achieve: their intentions, possible interpretations, desired outcomes, constraints and the boundaries of the organisation’s responsibilities. Consider both people acting directly and people choosing to delegate particular activities.</p>
+<h3 id="specify-the-required-logical-system">4. Specify the required logical system</h3>
+<p>Design the services independently of any interface or platform. Model information, processes, permissions, life histories and states, evidence, privacy requirements and routes for correction. Apply the Completion Chain to each significant service journey.</p>
+<h3 id="build-with-agents">5. Build with agents</h3>
+<p>Use AI development agents to create a working physical implementation from the logical model, with accessible human interfaces and appropriate machine-readable descriptions of service capabilities and permitted actions. Keep experimentation separate from production systems, with security, privacy, change control and human oversight.</p>
+<h3 id="evaluate-complete-tasks">6. Evaluate complete tasks</h3>
+<p>Test whether people can achieve defined outcomes, including assistive technology testing, agent-mediated interactions, verification of completed actions and recovery from errors. Failures feed back into the logical model as well as the implementation.</p>
+<p>A working prototype may expose an incorrect assumption about a service, and testing may reveal that an intended outcome was poorly defined. The model is revised accordingly.</p>
+<h2 id="from-prototype-to-working-service">From prototype to working service</h2>
+<p>AI agents make it possible to move from a logical model to a working prototype very quickly. That speed is valuable, but a convincing prototype is not a dependable service. The method distinguishes three levels of achievement:</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<th scope="col"ead>
+<tr class="header">
+<th scope="col"><strong>Level</strong></th>
+<th scope="col"><strong>What it means</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model demonstrated</td>
+<td>A working prototype shows how the proposed service could operate.</td>
+</tr>
+<tr class="even">
+<td>Service validated</td>
+<td>Representative users have completed defined tasks, including direct assistive technology and agent-mediated journeys.</td>
+</tr>
+<tr class="odd">
+<td>Production ready</td>
+<td>Accessibility, security, privacy, governance, operations, maintenance and service continuity requirements have been addressed.</td>
+</tr>
+</tbody>
+</table>
+<p>These levels stop the speed of AI-generated implementation from being mistaken for evidence of readiness. The ambition is to build quickly enough that ideas are tested against working systems, while keeping the discipline needed to deploy them responsibly.</p>
+<h2 id="migration-without-reproducing-the-old-system">Migration without reproducing the old system</h2>
+<p>Reconstructing the existing website also produces a content inventory, a URL map and a record of uncertainties that need organisational confirmation. These support a separate migration process, much as SSADM treated data conversion as its own piece of work. Existing content must be accounted for, published links and bookmarks should keep working through redirects, and member information, live transactions, legal obligations and operational dependencies need careful treatment.</p>
+<p>Migration constraints should be understood early, but they must not turn the new logical design into a reproduction of the existing website. The objective is continuity of service without continuity of unnecessary limitations.</p>
+<h2 id="a-practical-first-case-tavip">A practical first case: TAVIP</h2>
+<p>The Technology Association of Visually Impaired People (TAVIP) offers a suitable first opportunity to explore the method. The proposed starting point is an outside-in examination of TAVIP’s publicly available website and services. The aim is not merely to find accessibility defects or replace one set of pages with another. It is to reconstruct the underlying service model, identify what members and prospective members want to achieve, and demonstrate how those services could work through accessible direct interaction and authorised agents.</p>
+<p>A small pilot covering one complete service journey could establish whether the approach delivers practical value. The wider questions of delegated authority and agent-mediated member services could also give useful material to an organisational AI working group. The project is currently a proposal rather than an agreed collaboration. Any implementation, use of organisational information or publication of a joint case study would require TAVIP’s agreement.</p>
+<h2 id="what-makes-the-method-different">What makes the method different?</h2>
+<p>None of the individual ingredients is entirely new. Systems analysis has long distinguished logical systems from physical implementations. Accessibility practice has long required inclusive interaction and meaningful user testing. Service design has long examined user needs, journeys and outcomes.</p>
+<p>What has changed is the practical relationship between analysis, implementation and use. AI agents can now help reconstruct systems, implement designs and make revisions at a speed that changes the economics of development, while other agents increasingly act as intermediaries between people and organisations. The method brings these developments together while keeping human intention, understanding and control at the centre. It does not assume that an agent should always be used, or that technology can decide what a person ought to want. It asks what a service must make understandable, possible and verifiable for people to exercise meaningful choice.</p>
+<h2 id="questions-for-further-work">Questions for further work</h2>
+<p>Version 1.0 establishes the method. These questions are where it most needs testing and collaboration:</p>
+<ul>
+<li><p>How should a service describe its intentions and capabilities so that both people and agents can discover them, without creating another hidden layer that only developers understand?</p></li>
+<li><p>What is the minimum evidence an agent should obtain before telling someone that an action has succeeded?</p></li>
+<li><p>How can a small charity express delegated authority in plain language that its trustees can actually approve?</p></li>
+<li><p>Which parts of the method transfer to organisations that are not themselves accessibility specialists?</p></li>
+</ul>
+<h2 id="the-underlying-principle">The underlying principle</h2>
+<p>A coding agent can implement a misunderstanding in an afternoon. As implementation gets faster, the scarce skill is the ability to understand what should be built, why it should exist and what would count as evidence that it works. Agent-First Accessible Service Design puts that understanding before implementation. It treats accessibility not simply as a property of pages or controls, but as a property of the relationship between human intentions and achievable outcomes.</p>
+<p>The purpose is not to make people adapt to systems, or to make agents indispensable. It is to design services that people can understand, direct and use on their own terms, with or without an agent.</p>
+
+</main>
+<footer>
+<p>Content on this site is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)</a>.</p>
+<p>This site is built to <a href="/standard/">Zero Information Casualty v1.7</a>. Read the <a href="/accessibility/">accessibility statement</a>. Information for AI agents is at <a href="/llms.txt">llms.txt</a>.</p>
+</footer>
+</body>
+</html>
