@@ -24,7 +24,12 @@ A service should be designed from the outset to be open to all people, and to th
 
 The method revives systems analysis for the age of agents. It looks at an organisation from the outside, separates what a service does from how it was built, models it around human intentions, and then builds and tests it. At its centre is the Completion Chain, six links that every journey must hold:
 
-Intention, Understanding, Authorisation, Action, Evidence, Correction
+1.  Intention
+2.  Understanding
+3.  Authorisation
+4.  Action
+5.  Evidence
+6.  Correction
 
 [Read about Agent-First Accessible Service Design](/method/)
 

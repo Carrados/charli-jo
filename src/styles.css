@@ -78,3 +78,14 @@ footer { border-top: 0.0625rem solid var(--rule); padding-top: 1rem; padding-bot
 .contents { margin: 1.5rem 0 2rem; padding: 0.75rem 1.25rem; background: var(--panel); border-left: 0.25rem solid #9fbf45; }
 .contents h2 { font-size: 1.25rem; margin: 0.25rem 0 0.5rem; }
 .contents ol { margin: 0; padding-left: 1.5rem; }
+
+/* The Completion Chain: an ordered list drawn as six linked rings, gold into green. */
+.chain-list { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem 0; margin: 1.25rem 0 1.5rem; padding: 0 0 0 0.5rem; }
+.chain-list li { margin-left: -0.45rem; padding: 0.4rem 0.8rem; border: 0.28rem solid; border-radius: 2rem; background: var(--bg); font-weight: 700; font-size: 0.95rem; position: relative; }
+.chain-list li:nth-child(odd) { z-index: 1; }
+.chain-list li:nth-child(1) { border-color: #e9b949; }
+.chain-list li:nth-child(2) { border-color: #dcbd49; }
+.chain-list li:nth-child(3) { border-color: #c4c047; }
+.chain-list li:nth-child(4) { border-color: #9fbf45; }
+.chain-list li:nth-child(5) { border-color: #7fae3d; }
+.chain-list li:nth-child(6) { border-color: #5f9a35; }

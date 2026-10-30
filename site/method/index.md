@@ -73,7 +73,12 @@ An outcome might be: “The person has identified a suitable training course, un
 
 At the centre of the method is a six-part model of accessible service completion:
 
-**Intention → Understanding → Authorisation → Action → Evidence → Correction**
+1.  Intention
+2.  Understanding
+3.  Authorisation
+4.  Action
+5.  Evidence
+6.  Correction
 
 Every link is an accessibility requirement.
 

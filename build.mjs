@@ -15,6 +15,12 @@ const LICENCE_NAME = 'Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)
 const SEARCH = true;
 const TRAINING = true;
 
+const SHARE_ALT = 'Charli-Jo Tyrer. I help organisations create digital services that everyone can use: directly, with assistive technology, or by sending an agent. charli-jo.com: Principle, Method, Standard.';
+
+// The Completion Chain as a real list, styled as linked rings. Text, not a picture.
+const CHAIN = ['Intention', 'Understanding', 'Authorisation', 'Action', 'Evidence', 'Correction'];
+const chainList = () => `<ol class="chain-list" aria-label="The Completion Chain">\n${CHAIN.map(c => `<li>${c}</li>`).join('\n')}\n</ol>`;
+
 const ZIC_URL = 'https://zeroinformationcasualty.org/';
 
 const docs = {
@@ -27,7 +33,7 @@ const pages = [
     path: '/', nav: 'Home', h1: SITE, title: `Accessible service design for people and their agents — ${SITE}`,
     description: 'Charli-Jo Tyrer helps organisations create digital services that everyone can use: directly, with assistive technology, or by sending an AI agent.',
     llms: 'Who Charli-Jo Tyrer is, what the practice offers, and how to get in touch.',
-    body: () => read('src/home.html'), type: 'WebSite',
+    body: () => read('src/home.html').replace('<p class="chain">Intention, Understanding, Authorisation, Action, Evidence, Correction</p>', chainList()), type: 'WebSite',
   },
   {
     path: '/principle/', nav: 'Principle', h1: 'Universal Digital Involvement',
@@ -77,6 +83,7 @@ function fromDoc(name, strip) {
   // The page owns the single h1, so document headings move down one level.
   html = html.replace(/<(\/?)h([1-5])(\b[^>]*)>/g, (_, s, n, rest) => `<${s}h${+n + 1}${rest}>`);
   html = html.replace(/<th(?=[\s>])(?![^>]*scope)/g, '<th scope="col"');
+  html = html.replace(/<p><strong>Intention → Understanding → Authorisation → Action → Evidence → Correction<\/strong><\/p>/, chainList());
   return contents(html) + html;
 }
 
@@ -112,6 +119,11 @@ function layout(p, main) {
 <meta property="og:url" content="${url}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="${SITE}">
+<meta property="og:image" content="${ORIGIN}/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="${SHARE_ALT}">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/styles.css">
 <link rel="alternate" type="text/markdown" href="${p.path}index.md" title="Markdown version of this page">
 <script type="application/ld+json">
@@ -157,6 +169,7 @@ function write(rel, content) {
 if (existsSync(OUT)) rmSync(OUT, { recursive: true });
 mkdirSync(OUT, { recursive: true });
 copyFileSync('src/styles.css', join(OUT, 'styles.css'));
+copyFileSync('src/share.png', join(OUT, 'share.png'));
 // Cloudflare static asset headers: serve the agent surface with honest content types.
 write('_headers', `/*.md
   Content-Type: text/markdown; charset=utf-8
