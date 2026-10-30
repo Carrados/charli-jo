@@ -148,6 +148,14 @@ function write(rel, content) {
 if (existsSync(OUT)) rmSync(OUT, { recursive: true });
 mkdirSync(OUT, { recursive: true });
 copyFileSync('src/styles.css', join(OUT, 'styles.css'));
+// Cloudflare static asset headers: serve the agent surface with honest content types.
+write('_headers', `/*.md
+  Content-Type: text/markdown; charset=utf-8
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8
+`);
 for (const d of Object.values(docs)) write(`files/${d}.docx`, readFileSync(`src/${d}.docx`));
 
 const mirrors = [];

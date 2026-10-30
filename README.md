@@ -20,6 +20,7 @@ The finished site is written to `site/`.
 - `src/*.docx`: the three source documents. The Principle, Method and Standard pages are generated from these, so to update a page, replace its Word document and rebuild.
 - `src/styles.css`: the one stylesheet.
 - `build.mjs`: the build, including robots.txt, sitemap.xml and the agent surface. The search and training declarations are the `SEARCH` and `TRAINING` settings near the top.
+- `wrangler.jsonc`: Cloudflare Workers deployment. Cloudflare serves the `site/` folder as it is in the repo, so run the build and commit `site/` before pushing.
 
 ## Licence
 
