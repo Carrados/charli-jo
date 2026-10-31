@@ -41,7 +41,9 @@ Zero Information Casualty (ZIC) is a web design specification. It makes sure tha
 
 ## How we could work together
 
-Start with one journey. I look at your public website and services from the outside, with no logins, source code or hosting details needed, and reconstruct what your service actually does. Then I propose how one important journey could work for everyone, build a working prototype, and test it. If it is useful, we go further. If it is not, you have lost very little.
+Start with one journey. I look at your public website and services from the outside, with no logins, source code or hosting details needed, and reconstruct what your service actually does. Then I propose how one important journey could work for everyone, build a working prototype, and test it. If it is useful, we go further. If it is not, it has cost you nothing but a conversation.
+
+I don't charge organisations for this work. My exploration is funded by people who [sponsor it](https://charli.info/sponsor/).
 
 - Outside-in service review
 - A working prototype of one service journey
