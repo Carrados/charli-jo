@@ -146,6 +146,7 @@ ${p.byline ? `<p class="byline">${p.byline}</p>\n` : ''}${download}
 ${main}
 </main>
 <footer>
+<p class="unremarkable">This site is <a href="https://unremarkable.me/">Unremarkable</a>. <a href="https://unremarkable.me/fix/?page=${encodeURIComponent(url)}">Fix something on this page</a></p>
 <p>Contact: <a href="mailto:hello@charli-jo.com">hello@charli-jo.com</a></p>
 <p>Content on this site is licensed under <a href="${LICENCE_URL}">${LICENCE_NAME}</a>.</p>
 <p>This site is built to <a href="${ZIC_URL}">Zero Information Casualty v1.7</a>. Read the <a href="/accessibility/">accessibility statement</a>. Information for agents is at <a href="/llms.txt">llms.txt</a>.</p>
