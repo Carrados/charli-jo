@@ -24,11 +24,6 @@ const chainList = () => `<ol class="chain-list" aria-label="The Completion Chain
 
 const ZIC_URL = 'https://zeroinformationcasualty.org/';
 
-const docs = {
-  principle: 'Universal-Digital-Involvement-v1.1',
-  method: 'Agent-First-Accessible-Service-Design-v1.0',
-};
-
 const pages = [
   {
     path: '/', nav: 'Home', h1: SITE, title: `Accessible service design for people and their agents — ${SITE}`,
@@ -42,7 +37,7 @@ const pages = [
     description: 'Universal Digital Involvement: a proposal that digital services be designed from the outset for all people and the AI agents they authorise.',
     llms: 'The principle: services open to all people and their authorised agents, with five commitments for organisations.',
     byline: 'A proposal by Charli-Jo Tyrer. Version 1.1, October 2026.',
-    body: () => read('src/principle.html'), download: docs.principle, type: 'WebPage',
+    body: () => read('src/principle.html'), type: 'WebPage',
   },
   {
     path: '/method/', nav: 'Method', h1: 'Agent-First Accessible Service Design',
@@ -50,7 +45,7 @@ const pages = [
     description: 'Agent-First Accessible Service Design: a method that revives systems analysis to build services people can use directly or through AI agents.',
     llms: 'The method: outside-in systems analysis, the Completion Chain, six activities, and building with agents.',
     byline: 'An introduction to the method by Charli-Jo Tyrer. Version 1.0, October 2026.',
-    body: () => read('src/method.html'), download: docs.method, type: 'WebPage',
+    body: () => read('src/method.html'), type: 'WebPage',
   },
   {
     path: '/standard/', nav: 'Standard', h1: 'Zero Information Casualty',
@@ -89,8 +84,6 @@ function jsonLd(p) {
 
 function layout(p, main) {
   const url = ORIGIN + p.path;
-  const download = p.download
-    ? `<p class="download"><a href="/files/${p.download}.docx">Download ${p.h1} as a Word document</a></p>` : '';
   return `<!doctype html>
 <html lang="en-GB">
 <head>
@@ -127,7 +120,7 @@ ${navHtml(p.path)}
 </header>
 <main id="main" tabindex="-1">
 <h1>${p.h1}</h1>
-${p.byline ? `<p class="byline">${p.byline}</p>\n` : ''}${download}
+${p.byline ? `<p class="byline">${p.byline}</p>` : ''}
 ${main}
 </main>
 <footer>
@@ -168,7 +161,6 @@ write('_headers', `/*.md
 /llms-full.txt
   Content-Type: text/plain; charset=utf-8
 `);
-for (const d of Object.values(docs)) write(`files/${d}.docx`, readFileSync(`src/${d}.docx`));
 
 const mirrors = [];
 for (const p of pages) {
