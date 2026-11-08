@@ -45,11 +45,11 @@ Start with one journey. I look at your public website and services from the outs
 
 I don't charge organisations for this work. My exploration is funded by members who support it on [Patreon](https://www.patreon.com/c/CharliJo).
 
-- Outside-in service review
-- A working prototype of one service journey
-- Agent-first rebuilds of websites and services
-- Zero Information Casualty audits
-- Talks and training on agents and accessibility
+-   Outside-in service review
+-   A working prototype of one service journey
+-   Agent-first rebuilds of websites and services
+-   Zero Information Casualty audits
+-   Talks and training on agents and accessibility
 
 ## How I work
 
@@ -71,4 +71,4 @@ These are the standards I hold myself to when I look at an organisation's servic
 
 ## Get in touch
 
-Email me at <hello@charli-jo.com>.
+Email me at [hello@charli-jo.com](mailto:hello@charli-jo.com).

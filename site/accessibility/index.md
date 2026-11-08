@@ -6,11 +6,11 @@ This site is built to conform to [Zero Information Casualty version 1.7](https:/
 
 ## How it is built
 
-- Every page is plain, static HTML. No content depends on JavaScript, and the site uses none.
-- Each page has one main heading, headings in order, landmark regions and a skip link to the main content.
-- Text sizes are relative, so the site respects your browser's text size and zoom.
-- Colours meet WCAG AA contrast, rising to AAA if your system asks for more contrast. A dark scheme follows your system setting.
-- Nothing moves, so there is nothing to switch off for reduced motion.
+-   Every page is plain, static HTML. No content depends on JavaScript, and the site uses none.
+-   Each page has one main heading, headings in order, landmark regions and a skip link to the main content.
+-   Text sizes are relative, so the site respects your browser's text size and zoom.
+-   Colours meet WCAG AA contrast, rising to AAA if your system asks for more contrast. A dark scheme follows your system setting.
+-   Nothing moves, so there is nothing to switch off for reduced motion.
 
 ## Standards and testing
 
@@ -32,4 +32,4 @@ This site does not currently publish articles or posts in a series, so it has no
 
 ## If something does not work
 
-Please tell me at <hello@charli-jo.com>. I test this site with screen readers and with agents, but I would rather hear about a barrier than assume there is none.
+Please tell me at [hello@charli-jo.com](mailto:hello@charli-jo.com). I test this site with screen readers and with agents, but I would rather hear about a barrier than assume there is none.
