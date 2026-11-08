@@ -6,9 +6,10 @@ The site is built to Zero Information Casualty v1.7: static HTML, no JavaScript,
 
 ## Build
 
-Needs Node 18 or later and pandoc.
+Needs Node 18 or later.
 
 ```
+npm install
 node build.mjs
 ```
 
@@ -17,7 +18,8 @@ The finished site is written to `site/`.
 ## Where things live
 
 - `src/home.html` and `src/accessibility.html`: the home page and accessibility statement, written by hand.
-- `src/*.docx`: the Principle and Method source documents. Those pages are generated from them, so to update a page, replace its Word document and rebuild.
+- `src/principle.html` and `src/method.html`: the Principle and Method pages. They began as Word documents, converted once; the pages are now the master, so edit these files to change them.
+- `src/*.docx`: the original Word documents, offered as downloads on those pages. They are not used to build the pages, so they may fall behind an edited page.
 - `src/standard.html`: a short summary of ZIC. The full specification lives at https://zeroinformationcasualty.org/ and is not copied here.
 - `src/styles.css`: the one stylesheet.
 - `build.mjs`: the build, including robots.txt, sitemap.xml and the agent surface. The search and training declarations are the `SEARCH` and `TRAINING` settings near the top.

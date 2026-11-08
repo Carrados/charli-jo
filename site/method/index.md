@@ -15,10 +15,10 @@ Canonical page: https://charli-jo.com/method/
 7.  [Authority, evidence and trust](#authority-evidence-and-trust)
 8.  [How the method works](#how-the-method-works)
 9.  [From prototype to working service](#from-prototype-to-working-service)
-10. [Migration without reproducing the old system](#migration-without-reproducing-the-old-system)
-11. [What makes the method different?](#what-makes-the-method-different)
-12. [Questions for further work](#questions-for-further-work)
-13. [The underlying principle](#the-underlying-principle)
+10.  [Migration without reproducing the old system](#migration-without-reproducing-the-old-system)
+11.  [What makes the method different?](#what-makes-the-method-different)
+12.  [Questions for further work](#questions-for-further-work)
+13.  [The underlying principle](#the-underlying-principle)
 
 ## What is Agent-First Accessible Service Design?
 
@@ -46,12 +46,13 @@ The method deliberately revives disciplines I practised as a systems analyst, be
 
 The Structured Systems Analysis and Design Method (SSADM) drew a central distinction between the physical system, meaning how something is currently implemented, and the logical system, meaning what it does independently of that implementation. It moved through four views:
 
-| **View**          | **Question**                               |
-|-------------------|--------------------------------------------|
-| Current physical  | What exists now?                           |
-| Current logical   | What does the existing system actually do? |
-| Required logical  | What should the system do?                 |
-| Required physical | How should the new system be implemented?  |
+ 
+| **View** | **Question** |
+| --- | --- |
+| Current physical | What exists now? |
+| Current logical | What does the existing system actually do? |
+| Required logical | What should the system do? |
+| Required physical | How should the new system be implemented? |
 
 These distinctions matter even more in the age of AI coding agents. A website’s navigation menu tells us how somebody once decided to organise information. It doesn’t necessarily describe the organisation, its services or the intentions of the people who use them. Rebuilding the existing pages with newer technology can simply reproduce the same conceptual limitations, only faster. Instead, the method reconstructs the organisation’s logical services from the evidence available, then designs a required logical system around human intentions and outcomes. Existing technology informs the investigation and constrains implementation where necessary, but it does not dictate the service model.
 
@@ -82,14 +83,15 @@ At the centre of the method is a six-part model of accessible service completion
 
 Every link is an accessibility requirement.
 
-| **Link**      | **The question to test**                                                                                                           |
-|---------------|------------------------------------------------------------------------------------------------------------------------------------|
-| Intention     | Can the person express what they want to achieve, including uncertainty or ambiguity?                                              |
-| Understanding | Can they discover and understand the available options, requirements and consequences?                                             |
-| Authorisation | Can they decide what should happen and, where appropriate, give an agent permission to act within clear limits?                    |
-| Action        | Can the task actually be completed, either directly or through authorised delegation?                                              |
-| Evidence      | Can the person establish what happened, rather than relying on an unsupported assertion of success?                                |
-| Correction    | Can they change their mind, correct an error, withdraw permission, reverse an action where possible or find an appropriate remedy? |
+ 
+| **Link** | **The question to test** |
+| --- | --- |
+| Intention | Can the person express what they want to achieve, including uncertainty or ambiguity? |
+| Understanding | Can they discover and understand the available options, requirements and consequences? |
+| Authorisation | Can they decide what should happen and, where appropriate, give an agent permission to act within clear limits? |
+| Action | Can the task actually be completed, either directly or through authorised delegation? |
+| Evidence | Can the person establish what happened, rather than relying on an unsupported assertion of success? |
+| Correction | Can they change their mind, correct an error, withdraw permission, reverse an action where possible or find an appropriate remedy? |
 
 An individual page might satisfy WCAG while the wider service fails at one or more of these links. The Completion Chain therefore complements conventional accessibility testing rather than replacing it. It tests whether a service is accessible from the expression of an intention through to a demonstrable result.
 
@@ -99,11 +101,12 @@ The method considers two distinct uses of AI agents. The first is agent-assisted
 
 These are separate capabilities and must be evaluated separately. An agent’s ability to build an accessible website does not prove that another agent can use the resulting service effectively. Nor does successful agent-mediated interaction prove that the service works for a person using a screen reader without an agent. The method therefore requires three complementary forms of accessibility:
 
-- **Direct human accessibility:** people can use the service independently, including with assistive technologies, with WCAG conformance as the baseline.
-
-- **Agent-mediated accessibility:** authorised agents can discover relevant information, understand permitted actions and interact with the service reliably.
-
-- **Human control:** people remain able to understand, direct, verify and correct what happens on their behalf.
+-   **Direct human accessibility:** people can use the service independently, including with assistive technologies, with WCAG conformance as the baseline.
+    
+-   **Agent-mediated accessibility:** authorised agents can discover relevant information, understand permitted actions and interact with the service reliably.
+    
+-   **Human control:** people remain able to understand, direct, verify and correct what happens on their behalf.
+    
 
 None is a substitute for the others.
 
@@ -119,27 +122,27 @@ Privacy and data minimisation are built into the logical design. An agent should
 
 The method has six activities. They draw on the four SSADM views but allow continuous revision rather than a rigid sequence of approvals.
 
-### 1. Observe the current physical system
+### 1\. Observe the current physical system
 
 Examine the publicly available service from the outside: its information, navigation, forms, transactions, contact routes, terminology and apparent organisational responsibilities. Access to administrative systems or source code is not needed at this stage.
 
-### 2. Reconstruct the current logical system
+### 2\. Reconstruct the current logical system
 
 Determine what the organisation actually offers, which processes exist, what information moves between them and which rules govern them. Record each finding as an established fact, a reasonable inference or a question only the organisation can answer.
 
-### 3. Model intentions and outcomes
+### 3\. Model intentions and outcomes
 
 Identify what people come to the organisation to achieve: their intentions, possible interpretations, desired outcomes, constraints and the boundaries of the organisation’s responsibilities. Consider both people acting directly and people choosing to delegate particular activities.
 
-### 4. Specify the required logical system
+### 4\. Specify the required logical system
 
 Design the services independently of any interface or platform. Model information, processes, permissions, life histories and states, evidence, privacy requirements and routes for correction. Apply the Completion Chain to each significant service journey.
 
-### 5. Build with agents
+### 5\. Build with agents
 
 Use AI development agents to create a working physical implementation from the logical model, with accessible human interfaces and appropriate machine-readable descriptions of service capabilities and permitted actions. Keep experimentation separate from production systems, with security, privacy, change control and human oversight.
 
-### 6. Evaluate complete tasks
+### 6\. Evaluate complete tasks
 
 Test whether people can achieve defined outcomes, including assistive technology testing, agent-mediated interactions, verification of completed actions and recovery from errors. Failures feed back into the logical model as well as the implementation.
 
@@ -149,11 +152,12 @@ A working prototype may expose an incorrect assumption about a service, and test
 
 AI agents make it possible to move from a logical model to a working prototype very quickly. That speed is valuable, but a convincing prototype is not a dependable service. The method distinguishes three levels of achievement:
 
-| **Level**          | **What it means**                                                                                                              |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Model demonstrated | A working prototype shows how the proposed service could operate.                                                              |
-| Service validated  | Representative users have completed defined tasks, including direct assistive technology and agent-mediated journeys.          |
-| Production ready   | Accessibility, security, privacy, governance, operations, maintenance and service continuity requirements have been addressed. |
+ 
+| **Level** | **What it means** |
+| --- | --- |
+| Model demonstrated | A working prototype shows how the proposed service could operate. |
+| Service validated | Representative users have completed defined tasks, including direct assistive technology and agent-mediated journeys. |
+| Production ready | Accessibility, security, privacy, governance, operations, maintenance and service continuity requirements have been addressed. |
 
 These levels stop the speed of AI-generated implementation from being mistaken for evidence of readiness. The ambition is to build quickly enough that ideas are tested against working systems, while keeping the discipline needed to deploy them responsibly.
 
@@ -173,13 +177,14 @@ What has changed is the practical relationship between analysis, implementation 
 
 Version 1.0 establishes the method. These questions are where it most needs testing and collaboration:
 
-- How should a service describe its intentions and capabilities so that both people and agents can discover them, without creating another hidden layer that only developers understand?
-
-- What is the minimum evidence an agent should obtain before telling someone that an action has succeeded?
-
-- How can a small charity express delegated authority in plain language that its trustees can actually approve?
-
-- Which parts of the method transfer to organisations that are not themselves accessibility specialists?
+-   How should a service describe its intentions and capabilities so that both people and agents can discover them, without creating another hidden layer that only developers understand?
+    
+-   What is the minimum evidence an agent should obtain before telling someone that an action has succeeded?
+    
+-   How can a small charity express delegated authority in plain language that its trustees can actually approve?
+    
+-   Which parts of the method transfer to organisations that are not themselves accessibility specialists?
+    
 
 ## The underlying principle
 

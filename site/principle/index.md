@@ -15,8 +15,8 @@ Canonical page: https://charli-jo.com/principle/
 7.  [Five commitments](#five-commitments)
 8.  [How it fits with method and standards](#how-it-fits-with-method-and-standards)
 9.  [For publishers and agent visibility](#for-publishers-and-agent-visibility)
-10. [What changes](#what-changes)
-11. [An invitation](#an-invitation)
+10.  [What changes](#what-changes)
+11.  [An invitation](#an-invitation)
 
 ## The principle
 
@@ -87,25 +87,27 @@ WCAG and equivalent standards remain the baseline for interfaces. The principle 
 An organisation adopting Universal Digital Involvement commits to the following:
 
 1.  **Involvement is designed in, not added on.** Every service is specified from the start for direct use, assistive technology and authorised agents.
-
+    
 2.  **Every route is first-class.** No form of participation is a fallback, and none is quietly unsupported. Where one route cannot serve someone, an effective alternative is provided.
-
+    
 3.  **Agents act within clear authority.** Permissions are limited, understandable and withdrawable, data is kept to the minimum needed, and any restriction on automated access is proportionate and leaves authorised participation possible.
-
+    
 4.  **Outcomes are evidenced.** People, and their agents, can establish what happened, not merely be told that it did.
-
+    
 5.  **Disabled people lead evaluation.** Services are judged open when disabled people can complete real tasks, directly and through delegation.
+    
 
 ## How it fits with method and standards
 
 A principle needs ways to be met. Universal Digital Involvement is the principle. Two pieces of my own work are ways of delivering it, a method and a standard, and others are welcome:
 
-| **Layer**            | **What it does**                                                                                                                                                                                                                                                                                                                                                                                               |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Principle            | Universal Digital Involvement: services are open to all people and to the agents they authorise.                                                                                                                                                                                                                                                                                                               |
-| Method               | Agent-First Accessible Service Design: analyses an organisation from outside, models its services around human intentions, and builds and tests them so that people can complete tasks directly or through agents, with evidence and control.                                                                                                                                                                  |
+ 
+| **Layer** | **What it does** |
+| --- | --- |
+| Principle | Universal Digital Involvement: services are open to all people and to the agents they authorise. |
+| Method | Agent-First Accessible Service Design: analyses an organisation from outside, models its services around human intentions, and builds and tests them so that people can complete tasks directly or through agents, with evidence and control. |
 | Information standard | ZIC (Zero Information Casualty): a specification that checks whatever a service publishes reaches every reader, human, assistive technology or agent, without loss on the way. It also distinguishes the purposes for which machines arrive, such as search, agents acting for people and model training, so an organisation can decline some purposes without turning away the people its services exist for. |
-| Interfaces           | WCAG and equivalent standards: the established baseline for accessible human interaction.                                                                                                                                                                                                                                                                                                                      |
+| Interfaces | WCAG and equivalent standards: the established baseline for accessible human interaction. |
 
 Each layer can be adopted on its own. A charity can commit to the principle without adopting any particular method or standard.
 
@@ -123,13 +125,14 @@ One condition applies. Universal Digital Involvement is about being understood t
 
 If Universal Digital Involvement is taken seriously, several familiar things look different.
 
-- **Involvement moves from budget line to architecture.** It is no longer a programme that can be cut, because it is part of how the service works.
-
-- **Assisted digital becomes one route among many.** Human help remains vital, but it is no longer the only answer for people the main design left behind.
-
-- **Blocking agents becomes an involvement question.** Turning away an authorised agent is assessed the same way as turning away a person.
-
-- **Accessibility work moves upstream.** Instead of auditing finished systems, or simulating disabled users to find faults afterwards, disabled practitioners shape services before they are built.
+-   **Involvement moves from budget line to architecture.** It is no longer a programme that can be cut, because it is part of how the service works.
+    
+-   **Assisted digital becomes one route among many.** Human help remains vital, but it is no longer the only answer for people the main design left behind.
+    
+-   **Blocking agents becomes an involvement question.** Turning away an authorised agent is assessed the same way as turning away a person.
+    
+-   **Accessibility work moves upstream.** Instead of auditing finished systems, or simulating disabled users to find faults afterwards, disabled practitioners shape services before they are built.
+    
 
 ## An invitation
 

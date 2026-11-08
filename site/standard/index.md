@@ -21,10 +21,10 @@ ZIC asks four questions of any page:
 
 Each question has a matching way that information is lost:
 
-- **Rendering:** meaning was encoded somewhere the reader could not decode it, such as in colour or an image alone.
-- **Admission:** a person was denied information because the reader they sent was turned away.
-- **Delivery:** the reader was welcome, but the document never arrived.
-- **Reconstruction:** the document was read, silently misunderstood, and the person was told the result with confidence.
+-   **Rendering:** meaning was encoded somewhere the reader could not decode it, such as in colour or an image alone.
+-   **Admission:** a person was denied information because the reader they sent was turned away.
+-   **Delivery:** the reader was welcome, but the document never arrived.
+-   **Reconstruction:** the document was read, silently misunderstood, and the person was told the result with confidence.
 
 ## The sent agent
 

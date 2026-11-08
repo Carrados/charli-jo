@@ -1,8 +1,9 @@
 // Build charli-jo.com: static HTML pages, plus an agent surface
 // (llms.txt, llms-full.txt, Markdown mirrors) generated from the same pages.
-// Requires Node 18+ and pandoc. Run: node build.mjs
+// Requires Node 18+. Run: npm install, then node build.mjs
 import { readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync, existsSync } from 'node:fs';
-import { execFileSync } from 'node:child_process';
+import TurndownService from 'turndown';
+import { gfm } from 'turndown-plugin-gfm';
 import { dirname, join } from 'node:path';
 
 const ORIGIN = 'https://charli-jo.com';
@@ -41,7 +42,7 @@ const pages = [
     description: 'Universal Digital Involvement: a proposal that digital services be designed from the outset for all people and the AI agents they authorise.',
     llms: 'The principle: services open to all people and their authorised agents, with five commitments for organisations.',
     byline: 'A proposal by Charli-Jo Tyrer. Version 1.1, October 2026.',
-    body: () => fromDoc(docs.principle, 'leading-paras'), download: docs.principle, type: 'WebPage',
+    body: () => read('src/principle.html'), download: docs.principle, type: 'WebPage',
   },
   {
     path: '/method/', nav: 'Method', h1: 'Agent-First Accessible Service Design',
@@ -49,7 +50,7 @@ const pages = [
     description: 'Agent-First Accessible Service Design: a method that revives systems analysis to build services people can use directly or through AI agents.',
     llms: 'The method: outside-in systems analysis, the Completion Chain, six activities, and building with agents.',
     byline: 'An introduction to the method by Charli-Jo Tyrer. Version 1.0, October 2026.',
-    body: () => fromDoc(docs.method, 'leading-paras'), download: docs.method, type: 'WebPage',
+    body: () => read('src/method.html'), download: docs.method, type: 'WebPage',
   },
   {
     path: '/standard/', nav: 'Standard', h1: 'Zero Information Casualty',
@@ -69,23 +70,6 @@ const pages = [
 ];
 
 function read(p) { return readFileSync(p, 'utf8'); }
-
-function contents(html) {
-  const items = [...html.matchAll(/<h2 id="([^"]+)"[^>]*>(.*?)<\/h2>/g)]
-    .map(([, id, text]) => `<li><a href="#${id}">${text.replace(/<[^>]+>/g, '')}</a></li>`);
-  return items.length > 3 ? `<nav class="contents" aria-labelledby="contents-heading">\n<h2 id="contents-heading">Contents</h2>\n<ol>\n${items.join('\n')}\n</ol>\n</nav>\n` : '';
-}
-
-function fromDoc(name, strip) {
-  let html = execFileSync('pandoc', [`src/${name}.docx`, '-t', 'html5', '--wrap=none'], { encoding: 'utf8' });
-  if (strip === 'leading-paras') html = html.slice(html.indexOf('<h1'));
-  if (strip === 'first-heading') html = html.replace(/^\s*<h1[^>]*>.*?<\/h1>\s*/s, '');
-  // The page owns the single h1, so document headings move down one level.
-  html = html.replace(/<(\/?)h([1-5])(\b[^>]*)>/g, (_, s, n, rest) => `<${s}h${+n + 1}${rest}>`);
-  html = html.replace(/<th(?=[\s>])(?![^>]*scope)/g, '<th scope="col"');
-  html = html.replace(/<p><strong>Intention → Understanding → Authorisation → Action → Evidence → Correction<\/strong><\/p>/, chainList());
-  return contents(html) + html;
-}
 
 // Accessibility always comes first in the menu, on every site Unremarkable builds.
 const navHtml = (current) => [...pages].sort((a, b) => (b.path === '/accessibility/') - (a.path === '/accessibility/')).map(p =>
@@ -157,8 +141,12 @@ ${main}
 `;
 }
 
+// Markdown copies for agents (ZIC). Turndown with GitHub-flavoured tables, so the
+// Principle and Method tables survive as tables.
+const turndown = new TurndownService({ headingStyle: 'atx', bulletListMarker: '-', codeBlockStyle: 'fenced', emDelimiter: '*' });
+turndown.use(gfm);
 function toMarkdown(html) {
-  return execFileSync('pandoc', ['-f', 'html', '-t', 'gfm', '--wrap=none'], { input: html, encoding: 'utf8' });
+  return turndown.turndown(html);
 }
 
 function write(rel, content) {
