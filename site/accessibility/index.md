@@ -9,16 +9,20 @@ This site is built to conform to [Zero Information Casualty version 1.7](https:/
 -   Every page is plain, static HTML. No content depends on JavaScript, and the site uses none.
 -   Each page has one main heading, headings in order, landmark regions and a skip link to the main content.
 -   Text sizes are relative, so the site respects your browser's text size and zoom.
--   Colours meet WCAG AA contrast, rising to AAA if your system asks for more contrast. A dark scheme follows your system setting.
+-   All text meets WCAG AAA contrast, at least 7:1, in both the light scheme and the dark scheme, which follows your system setting. Measured on 8 November 2026: body text 14.6:1 and 15.4:1, secondary text 7.5:1 and 10.4:1, links 7.6:1 and 12.6:1, headings 9.4:1 and 10.8:1. If your system asks for more contrast, the site switches to plain black and white.
 -   Nothing moves, so there is nothing to switch off for reduced motion.
 
 ## Standards and testing
 
 The site aims to meet WCAG 2.2 at level AA as a baseline, alongside Zero Information Casualty v1.7. It has been checked with WAVE, and I test it myself with screen readers and with agents as it changes.
 
-This is a statement of how the site is built and what it aims for, not a claim of certified conformance. No independent audit has been carried out. The two Word documents offered for download are provided for convenience; the web pages are the accessible versions.
+This is a statement of how the site is built and what it aims for, not a claim of certified conformance. No independent audit has been carried out.
 
-This statement was last reviewed on 30 October 2026.
+This statement was last reviewed on 8 November 2026.
+
+## Reporting a problem
+
+Every page ends with a link, "Fix something on this page". It opens a short form that already knows which page you were on. It doesn't ask who you are, and a person reads every report. The fix is tested before it goes live.
 
 ## For agents
 
