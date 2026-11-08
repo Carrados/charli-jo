@@ -87,7 +87,8 @@ function fromDoc(name, strip) {
   return contents(html) + html;
 }
 
-const navHtml = (current) => pages.map(p =>
+// Accessibility always comes first in the menu, on every site Unremarkable builds.
+const navHtml = (current) => [...pages].sort((a, b) => (b.path === '/accessibility/') - (a.path === '/accessibility/')).map(p =>
   `<li><a href="${p.path}"${p.path === current ? ' aria-current="page"' : ''}>${p.nav}</a></li>`).join('\n')
   + '\n<li><a href="/#contact">Contact</a></li>';
 
