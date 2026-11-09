@@ -68,7 +68,10 @@ function read(p) { return readFileSync(p, 'utf8'); }
 
 // Accessibility always comes first in the menu, on every site Unremarkable builds.
 const navHtml = (current) => [...pages].sort((a, b) => (b.path === '/accessibility/') - (a.path === '/accessibility/')).map(p =>
-  `<li><a href="${p.path}"${p.path === current ? ' aria-current="page"' : ''}>${p.nav}</a></li>`).join('\n')
+  (p.path === current
+    // The page you are on is named in the menu, but is not a link to itself (rulebook rule 2).
+    ? `<li><a aria-current="page">${p.nav}</a></li>`
+    : `<li><a href="${p.path}">${p.nav}</a></li>`)).join('\n')
   + '\n<li><a href="/#contact">Contact</a></li>';
 
 function jsonLd(p) {
